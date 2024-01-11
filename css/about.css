@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: #F0ECE5;
+} */
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+header {
+    /* border: 2px solid red; */
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1111;
+    margin-top: -6%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+
+.d111 {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    margin-top: 15rem;
+    /* margin: auto; */
+    /* margin-top: 1rem; */
+    /* border: 2px solid rgb(36, 179, 11); */
+    background-image: url("https://cdn-jkcnd.nitrocdn.com/jrrJrtkChkpymOiNiojCjmcchmsvTvrs/assets/images/optimized/rev-4adf824/www.fristam.in/wp-content/uploads/2023/05/home-banner-02.jpg");
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    /* background-color: #394867; */
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d111 .name {
+    /* position: absolute; */
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+
+}
+
+.name {
+    padding-top: 8rem;
+
+    padding-left: 5rem;
+}
+
+#h1 {
+    position: absolute;
+    top: 12rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-size: 6rem;
+    text-align: left;
+    text-shadow: rgba(0, 0, 0, 0.15) 2.4px 8px 2.4px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
+}
+
+#s1 {
+    position: absolute;
+    top: 20rem;
+    width: 80%;
+    font-weight: bold;
+    /* border: 2px solid red; */
+    /* padding-top: 10rem; */
+    text-shadow: rgba(0, 0, 0, 0.15) 2.4px 8px 2.4px;
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+}
+
+.img {
+    /* margin-top: 5rem; */
+    /* padding-top: 10rem; */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.622));
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.img1 {
+    transform: rotateY(180deg);
+    margin-top: 8rem;
+    width: 60%;
+    height: 60%;
+}
+
+.d2 {
+    position: relative;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.428) 0px 8px 24px;
+
+}
+
+.d22,
+.d23 {
+    /* position: absolute; */
+
+    /* border: 2px solid red; */
+    width: 45%;
+    height: 60rem;
+}
+
+.d22 {
+    left: 15rem;
+}
+
+.img2 {
+    width: 100%;
+    filter: drop-shadow(5px 5px 10px rgba(65, 64, 64, 0.114));
+    height: 100%;
+}
+
+.d23 {
+    position: absolute;
+    right: 0;
+    display: flex;
+    padding-top: 1.5rem;
+    flex-wrap: wrap;
+    right: 2rem;
+    /* border: 4px solid yellow; */
+}
+
+.subdiv {
+    width: 100%;
+    height: 15rem;
+    color: #F0ECE5;
+    background-color: #212A3E;
+    /* border: 2px solid blue; */
+    border-radius: .5rem;
+    padding-left: 6rem;
+    box-shadow: rgba(89, 106, 192, 0.765) 0px 2px 8px 0px;
+}
+
+.subdiv:hover {
+    box-shadow: rgb(213, 100, 100) 0px 0px 5px 5px;
+}
+
+.subdiv .subdiv1 {
+    position: relative;
+    top: 1.5rem;
+    left: -12.5rem;
+    width: 12rem;
+    height: 12rem;
+    padding: auto;
+    display: flex;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.subdiv .subdiv1 i {
+    font-size: 5rem;
+    margin: auto;
+}
+
+.l1,
+.l2,
+.l3 {
+    position: relative;
+    top: -2rem;
+    left: 1.8rem;
+    font-size: 1.5rem;
+    visibility: hidden;
+}
+
+.subdiv .hding {
+    width: 100%;
+    position: relative;
+    bottom: 10rem;
+    padding-left: 5rem;
+    font-size: 3rem;
+}
+
+.subdiv .span1 {
+    position: relative;
+    line-height: 2rem;
+    padding-right: 5rem;
+    font-size: 1.5rem;
+    bottom: 9rem;
+    /* border: 2px solid red; */
+}
+
+.award,
+.Solution,
+.team {
+    position: relative;
+    margin-top: 8rem;
+    width: 100%;
+    font-size: 4rem;
+    /* border: 2px solid red; */
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.15) 2.4px 8px 2.4px;
+    margin-bottom: 8rem;
+}
+
+.ditem:hover {
+    /* background-color: #27374D; */
+    cursor: pointer;
+
+
+}
+
+
+.item {
+    position: relative;
+    /* border: 2px solid red; */
+}
+.ditem {
+    position: relative;
+    width: 100%;
+    /* margin: auto; */
+    padding: 2rem;
+    /* height: 25rem; */
+    /* border-radius: .5rem; */
+    background-color: none;
+    /* border: 2px solid #27374D; */
+    border: 1px solid orangered;
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+.d3 {
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.d3 .d32subdiv {
+    width: 30%;
+    position: relative;
+    height: 40rem;
+    border-radius: .5rem;
+    box-shadow: #09263578 0px 2px 4px 0px, #09263581 0px 2px 16px 0px;
+    background-color: #2A2F4F;
+    cursor: pointer;
+
+}
+
+.d3 .d32subdiv .disp {
+    position: absolute;
+    top: 0;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.506);
+    scale: 0;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    transition: 0.1s;
+}
+
+.d32subdiv:hover .disp {
+    scale: 1;
+}
+
+.d3 .d32subdiv :hover .d3 .d32subdiv img {
+    filter: brightness(.2);
+}
+
+.d3 .d32subdiv img {
+    width: 100%;
+    border-radius: 3rem;
+    height: 100%;
+}
+
+.item {
+    /* border: 2px solid red; */
+    padding-top: 7rem;
+}
+
+.img4 {
+    position: absolute;
+    /* border: 1px solid rebeccapurple; */
+    height: 10rem;
+    /* border-radius: 50%; */
+    border-radius: 1rem;
+    width: 10rem;
+    top: -5rem;
+    left: 2rem;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ditem label {
+    font-size: 2rem;
+    position: absolute;
+    top: -2.5rem;
+    background-color: white;
+    /* background-color: #F0ECE5; */
+    letter-spacing: 1px;
+    font-weight: 900;
+    left: 12rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1rem;
+}
+
+.ditem span {
+    position: absolute;
+    top: 3rem;
+    font-weight: 550;
+    font-size: 1.8rem;
+    text-align: justify;
+    left: 15rem;
+    color: #27374D;
+}
+
+.ditem p {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    color: #27374D;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    padding: 5rem;
+    padding-top: 8rem;
+    font-size: 1.5rem;
+}
+
+.d5 {
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.d5 .d5subdiv {
+    width: 30%;
+    position: relative;
+    height: 40rem;
+    border-radius: .5rem;
+    box-shadow: #09263578 0px 2px 4px 0px, #09263581 0px 2px 16px 0px;
+    background-color: #2A2F4F;
+}
+
+.h6 {
+    width: 100%;
+    text-align: center;
+    color: #DDE6ED;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.d32subdiv p {
+    font-size: 2rem;
+    overflow: hidden;
+    color: #DDE6ED;
+    padding-top: 4rem;
+    height: 25rem;
+    text-align: justify;
+    /* border: 2px solid red; */
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.d5subdiv p {
+    position: absolute;
+    top: 10rem;
+    font-size: 2rem;
+    margin: auto;
+    overflow: hidden;
+    color: #DDE6ED;
+    text-align: justify;
+    height: 20rem;
+    /* border: 2px solid red; */
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.btn {
+    position: absolute;
+    right: 5rem;
+    bottom: 5rem;
+    padding: 1rem;
+    background: none;
+    border: 2px solid #DDE6ED;
+    color: #DDE6ED;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #DDE6ED;
+    color: #2A2F4F;
+}
+
+.btn a {
+    margin: auto;
+    color: #DDE6ED;
+    /* border: 2px solid red; */
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+.btn:hover a {
+    color: #2A2F4F;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #212A3E;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DDE6ED;
+    border-radius: .4rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8c949a;
+}
+
+#more,
+#more1,
+#more2 {
+    position: relative;
+    /* border: 2px solid red; */
+    font-size: 2rem;
+    margin: auto;
+    background-color: #4451a3;
+    margin-bottom: 5rem;
+    display: none;
+    padding: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    border-radius: 1rem;
+    line-height: 3rem;
+    color: #DDE6ED;
+}
+
+#more h1,
+#more1 h1,
+#more2 h1 {
+    width: 100%;
+    margin-bottom: 5rem;
+    letter-spacing: .5rem;
+    color: #DDE6ED;
+    text-align: center;
+    font-size: 5rem;
+}
+
+@media screen and (max-width:998px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .subdiv {
+        padding-right: 2rem;
+    }
+
+    .subdiv .span1 {
+        bottom: 10rem;
+    }
+
+    .ditem {
+        width: 100%;
+    }
+
+    .d2 {
+        width: 99%;
+    }
+
+}
+
+@media screen and (max-width:884px) {
+    .subdiv {
+        padding-right: 1rem;
+        font-size: 1rem;
+    }
+
+    .subdiv .span1 {
+        font-size: 1.2rem;
+    }
+
+    .h6 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .ditem p {
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    html {
+        font-size: 35%;
+    }
+
+    .d111 {
+        padding: 2rem;
+        height: 60rem;
+    }
+
+    .d111 .name,
+    .img {
+        width: 100%;
+    }
+
+    .img .img1 {
+        width: 50rem;
+        height: 40rem;
+    }
+
+    .name {
+        padding-left: 1.5rem;
+    }
+
+    #s1 {
+        margin-top: 8rem;
+        font-size: 2.5rem;
+    }
+
+    .d2 {
+        overflow: hidden;
+        top: 0rem;
+
+    }
+
+    .d22 {
+        visibility: hidden;
+    }
+
+    .d23 {
+        visibility: visible;
+        left: 8rem;
+    }
+
+    .subdiv {
+        width: 80%;
+    }
+
+    .d23 {
+        width: 100%;
+    }
+
+    .award {
+        top: 0rem;
+    }
+
+    .Solution {
+        top: 10rem;
+    }
+
+    .team {
+        margin-top: 0rem;
+        z-index: 1;
+    }
+
+    .owl-carousel {
+        top: 0rem;
+    }
+
+    .d3 .d32subdiv {
+        width: 90%;
+        height: 60rem;
+        margin-bottom: 5rem;
+    }
+
+    .ditem {
+
+        height: 40rem;
+    }
+
+    .d5 .d5subdiv {
+        width: 90%;
+        padding-top: 4rem;
+        height: 60rem;
+        text-align: justify;
+        margin-bottom: 5rem;
+    }
+
+    .h6 {
+        font-size: 3.5rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .ditem label {
+        font-size: 2.5rem;
+    }
+
+    .ditem span {
+        font-size: 2.3rem;
+    }
+
+    .ditem p {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .d5 {
+        top: 0rem;
+
+    }
+
+    .d5subdiv h6 {
+        font-size: 5rem;
+    }
+
+    .d32subdiv p {
+        font-size: 3rem;
+    }
+
+    .d5subdiv p {
+        top: 15rem;
+        height: 30rem;
+        font-size: 3rem;
+
+    }
+
+}

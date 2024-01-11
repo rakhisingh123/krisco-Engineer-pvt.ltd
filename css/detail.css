@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f5;
+}
+
+html {
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+}
+header {
+    /* border: 2px solid red; */
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1111;
+    margin-top: -4%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+.dmain{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: auto;
+    padding: 8rem;
+    margin-top: 12rem;
+    /* margin-bottom: 5rem; */
+    text-align: justify;
+    line-height: 2.5rem;
+    background-color: white;
+    border-radius:  0 0  1.5rem 1.5rem;
+   
+}
+/* .dhead{
+    
+    width: 100%;
+    position: relative;
+    height: 20rem;
+    background-image: url(upvc.jpg);
+    background-size: cover;
+    background-position: 100%;
+    
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    margin-top: 12rem;
+    border-radius: 0 0 1rem 1rem;
+} */
+/* .dhead .subdhead{
+   
+    width: 100%;
+    height: 100%;
+    background-color: rgba(195, 195, 195, 0.168);
+    border-radius: 0 0 .5rem .5rem;
+}
+.dhead .subdhead h1{
+    width: 100%;
+    top: 5rem;
+    padding: 4rem;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    margin: auto;
+    text-shadow: rgba(197, 196, 196, 0.564) 2.4px 15px 5px;
+   
+    font-size: 4.5rem;
+    color: rgb(0, 0, 0);
+    
+} */
+.dspan{
+    font-size: 2rem;
+    /* margin-top: 15rem;     */
+    
+}
+.dimg{
+    position: relative;
+    /* border: 2px solid red; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dimg h1{
+    position: absolute;
+    font-size: 5rem;
+    /* width: 50%; */
+    margin-bottom: 7rem;
+    text-shadow: rgba(10, 10, 10, 0.737) 2.4px 15px 5px;
+    line-height: 5rem;
+    /* top: 0; */
+    color: #fff;
+}
+.dmain .dimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    margin-bottom: 5rem;
+}
+.content{
+    background-color: rgb(199, 230, 240);
+    padding: 5rem;
+    border-radius: 1rem;
+    /* border: 2px solid red; */
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    margin: auto;
+    margin-top: 5rem;
+    line-height: 4rem;
+}
+.t1{
+    width: 100%;
+}
+.content .t1 td{
+    text-align: left;
+    width: 100%;
+}
+.dspan:hover{
+    color: black;
+    cursor: default;
+}
+.imgd{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.imgd2{
+  margin: auto;
+  width: 50%;
+  height: 30rem;
+  margin-top: 2rem;
+  /* border: 2px solid black;   */
+  margin-bottom: 2rem;
+}
+.imgd2 img{
+    width: 100%;
+    height: 100%;
+}
+.sugstblog{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-size: 2.5rem;
+}
+.dsuggest{
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex; flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: .5rem;
+    margin-bottom: 5rem;
+    /* width: 100%; */
+}
+.dsuggest .dsubsuggest{
+    /* border: 2px solid blue; */
+    width: 35rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: block;
+    /* height: 40rem; */
+}
+.dsuggest .dsubsuggest .dsubsuggest1 ,.dsubsuggest2{
+    /* border: 2px solid blueviolet; */
+    width: 100%;
+    
+    
+    cursor: pointer;
+    line-height: 2rem;
+    /* height: 50%; */
+}
+.dsubsuggest1{
+    padding: 1rem;
+    background-color:  rgb(21, 21, 65);
+    /* border: 2px solid rgb(37, 37, 255); */
+    border-radius: .5rem .5rem 0 0;
+}
+.dsubsuggest2{
+    position: relative;
+    padding: 2rem;
+    background-color: rgb(21, 21, 65);
+    border-radius: 0 0 .5rem .5rem;
+}
+.dsuggest .dsubsuggest .dsubsuggest1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.dsuggest .dsubsuggest .dsubsuggest2  p{
+    /* position: absolute; */
+    color: white;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.dsuggest .dsubsuggest .dsubsuggest2  span{
+   font-size: 1.5rem;
+   color: white;
+   
+}
+.dsuggest .dsubsuggest .dsubsuggest2 button{
+    /* position: absolute; */
+    background-color: rgb(174, 174, 211);
+    color:white;
+    padding: 1rem;
+    right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    border: none;
+
+}
+.author{
+    margin-top: 2rem;
+    display: flex;
+    /* padding: 2rem; */
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.author .name,.date{
+    font-size: 2rem;
+    border-bottom: 2px solid rgb(38, 38, 165);
+}
+@media screen and (max-width:998px){
+    
+    html{
+        font-size: 55%;
+    }
+   
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 45%;
+    }
+    .content{
+        /* border: 2px solid red; */
+        width: 85%;
+    }
+}
+@media screen and (max-width:650px){
+    html{
+        font-size: 35%;
+    }
+    .dmain{
+        width: 90%;
+        padding: 5rem;
+        line-height: 3.5rem;
+        
+    }
+  
+    .dspan{
+        font-size: 2.5rem;
+    }
+    .dsuggest .dsubsuggest{
+        width: 50rem;
+    }
+    .content{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+}

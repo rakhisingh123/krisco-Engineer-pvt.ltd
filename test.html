@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .d1 {
+        border: 2px solid red;
+        width: 100%;
+        float: right;
+        /* height: 40rem; */
+        position: relative;
+        background: #fff;
+        padding: 10rem;
+    }
+
+    .d2 {
+        border: 2px solid green;
+        width: 100%;
+        height: 100%;
+        /* float: right; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* position: relative; */
+    }
+
+    .d2 .items {
+        width: 50%;
+        height: 80%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        border-radius: .8rem;
+        padding: 1.5rem;
+        border: 2px solid rgb(228, 164, 25);
+    }
+
+    .d2 .slick-slide {
+        margin: 1.5rem;
+
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -1rem;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #fff;
+    }
+
+    .slick-dots li button:before {
+        font-size: 1.2rem;
+    }
+
+
+    .slick-next:before,
+    .slick-prev:before {
+        color: #452bc5;
+        font-size: 2.4rem;
+        position: absolute;
+
+        /* top: -5rem; */
+    }
+
+    .slick-next {
+        right: 2rem;
+        z-index: 1111;
+    }
+
+    .slick-prev {
+        left: -1rem;
+        z-index: 1111;
+    }
+
+    .circle {
+        position: absolute;
+        top: 5rem;
+        height: 9rem;
+        width: 9rem;
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    .circle img {
+        position: absolute;
+        /* border: 1px solid rebeccapurple; */
+        height:100%;
+        width: 100%;
+        border-radius: 50%;
+        width: 8rem;
+        /* top: -4rem; */
+        left:10%;
+        /* background-color: white; */
+        /* overflow: hidden; */
+
+    }
+
+    .items p {
+        padding: 2rem;
+        position: relative;
+        /* top: 2rem; */
+        /* left: 8%; */
+        text-align: justify;
+    }
+
+    .items h2 {
+        text-align: center;
+    }
+
+    .items label {
+        font-size: 2rem;
+        position: absolute;
+        top: 8.5rem;
+        right: 50.6%;
+        background-color: white;
+        letter-spacing: 1px;
+        font-weight: 500;
+        
+    }
+</style>
+
+<body>
+    <div class="d1">
+        <div class="d2">
+            <div class="items">
+                <label>Rakhi singh</label>
+                <div class="circle"><img src="avatar.jpg" alt=""></div>
+                <h2>loreemfshgsiyftyesg</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod amet cumque eveniet iusto sit, ipsum
+                    unde sapiente officiis alias perferendis laborum quia porro accusamus vel, quidem dolor qui incidunt
+                    facere.</p>
+            </div>
+            <!-- <div class="items">
+                <label>Rakhi singh</label>
+                <div class="circle"><img src="avatar.jpg" alt=""></div>
+                <h2>loreemfshgsiyftyesg</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod amet cumque eveniet iusto sit, ipsum
+                    unde sapiente officiis alias perferendis laborum quia porro accusamus vel, quidem dolor qui incidunt
+                    facere.</p>
+            </div> -->
+            
+        </div>
+    </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $('.batch').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    // dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    variableWidth: true,
+    variableHeight: true,
+    mobileFirst: true,
+    responsive: [
+        {
+            breakpoint: 998,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                centerMode: false
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                initialSlide: 1,
+                dots: false,
+                centerMode: false
+            }
+        },
+        {
+            
+        }]
+    });
+</script>
+</body>
+
+</html>

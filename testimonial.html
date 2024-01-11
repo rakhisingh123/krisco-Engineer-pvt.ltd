@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 10px;
+        }
+        .turn {
+            /* border: 1px solid red; */
+            overflow: hidden;
+            height: 25rem;
+        }
+
+        .testimonial {
+            position: relative;
+            /* width: 100%; */
+            /* border: 1px solid red; */
+            height: 25rem;
+            display: flex;
+            width: 300%;
+            gap: 3rem;
+            padding: 2rem;
+            justify-content: space-around;
+            transition: 0.5s;
+        }
+
+        .first {
+            background-color: aquamarine;
+            position: relative;
+            /* margin-left: 5rem; */
+            margin-top: 3.5rem;
+            border: 2px solid red;
+            width: 40%;
+            height: 80%;
+            animation: turn 5s 2s infinite linear;
+        }
+
+        .img {
+            position: absolute;
+            /* border: 1px solid rebeccapurple; */
+            height: 8rem;
+            border-radius: 50%;
+            width: 8rem;
+            top: -4rem;
+            left: 3rem;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .first label {
+            font-size: 2rem;
+            position: absolute;
+            top: -1.5rem;
+            background-color: white;
+            letter-spacing: 1px;
+            font-weight: 900;
+            left: 11rem;
+        }
+
+        .first span {
+            position: absolute;
+            top: 2rem;
+            font-weight: 550;
+            font-size: 1.8rem;
+            left: 12rem;
+        }
+
+        .first p {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            text-align: left;
+            line-height: 2rem;
+            letter-spacing: 1px;
+            padding-top: 8rem;
+            padding: 5rem;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">What Our Client's Say About Us</h1>
+    <div class="turn">
+        <div class="testimonial">
+
+            <div class="first">
+                <div class="img">
+                    <img src="pp.jpg" alt="">
+                </div>
+                <label for="">Nikhil Kumar</label>
+                <span>Lorem ipsum dolor sit amet</span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+                    dicta
+                    consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+                    consequatur
+                    pariatur voluptates quam atque.
+                </p>
+            </div>
+            <div class="first">
+                <div class="img">
+                    <img src="pp.jpg" alt="">
+                </div>
+                <label for="">Nikhil</label>
+                <span>Lorem ipsum dolor sit amet</span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+                    dicta
+                    consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+                    consequatur
+                    pariatur voluptates quam atque.
+                </p>
+            </div>
+            <div class="first">
+                <div class="img">
+                    <img src="pp.jpg" alt="">
+                </div>
+                <label for="">Nikhil Kumar</label>
+                <span>Lorem ipsum dolor sit amet</span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+                    dicta
+                    consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+                    consequatur
+                    pariatur voluptates quam atque.
+                </p>
+            </div>
+            <div class="first">
+                <div class="img">
+                    <img src="pp.jpg" alt="">
+                </div>
+                <label for="">Nikhil Kumar</label>
+                <span>Lorem ipsum dolor sit amet</span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+                    dicta
+                    consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+                    consequatur
+                    pariatur voluptates quam atque.
+                </p>
+            </div>
+            <div class="first">
+                <div class="img">
+                    <img src="pp.jpg" alt="">
+                </div>
+                <label for="">Nikhil</label>
+                <span>Lorem ipsum dolor sit amet</span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+                    dicta
+                    consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+                    consequatur
+                    pariatur voluptates quam atque.
+                </p>
+            </div>
+            <div class="first">
+                <div class="img">
+                    <img src="pp.jpg" alt="">
+                </div>
+                <label for="">Nikhil</label>
+                <span>Lorem ipsum dolor sit amet</span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum repellendus, facilis sunt facere
+                    dicta
+                    consequuntur accusantium quos consectetur debitis alias voluptate sint excepturi tempora possimus,
+                    consequatur
+                    pariatur voluptates quam atque.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const testimonialSlider = document.querySelector('.testimonial');
+            let currentIndex = 0;
+
+            function showtestimonial(index) {
+                const newTransformValue = -index * 16.6 + '%';
+                testimonialSlider.style.transform = 'translateX(' + newTransformValue + ')';
+            }
+
+            function nexttestimonial() {
+                currentIndex = (currentIndex + 1) % testimonialSlider.childElementCount;
+                showtestimonial(currentIndex);
+            }
+
+            function prevtestimonial() {
+                currentIndex = (currentIndex - 11 + testimonialSlider.childElementCount) % testimonialSlider.childElementCount;
+                showtestimonial(currentIndex);
+            }
+
+            // Optional: Automatically advance to the next testimonial every 5 seconds
+            setInterval(nexttestimonial, 5000);
+
+            // Optional: Pause the automatic sliding when hovering over the testimonial container
+            testimonialSlider.addEventListener('mouseenter', function () {
+                clearInterval(autoSlideInterval);
+            });
+
+            testimonialSlider.addEventListener('mouseleave', function () {
+                autoSlideInterval = setInterval(nexttestimonial, 5000);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

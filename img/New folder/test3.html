@@ -1,0 +1,866 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="header.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet"> -->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Freebie: 4 Bootstrap Gallery Templates</title>
+    <style>
+        body {
+            min-height: 100vh;
+            font: normal 16px sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        .container.gallery-container {
+            background-color: #fff;
+            color: #35373a;
+            min-height: 100vh;
+            margin-top: 20rem;
+        }
+
+        .gallery-container h1 {
+            text-align: center;
+            font-family: 'Droid Sans', sans-serif;
+            font-weight: bold;
+            /* border: 2px solid red; */
+        }
+
+        .gallery-container p.page-description {
+            text-align: center;
+            margin: 25px auto;
+            font-size: 18px;
+            color: #999;
+        }
+
+        .tz-gallery {
+            padding: 40px;
+        }
+
+        .tz-gallery .row>div {
+            padding: 2px;
+        }
+
+        .tz-gallery .lightbox img {
+            width: 100%;
+            border-radius: 0;
+            position: relative;
+
+        }
+
+        .tz-gallery .lightbox:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -13px;
+            margin-left: -13px;
+            opacity: 0;
+            color: #fff;
+            font-size: 26px;
+            font-family: 'Glyphicons Halflings';
+            content: '\e065';
+            pointer-events: none;
+            transition: 0.4s;
+            z-index: 1111;
+        }
+        .tz-gallery .lightbox:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-color: rgba(255, 255, 255, 0.201);
+            content: '';
+            transition: 0.4s;
+        }
+        .lightbox:hover {
+            background-color: #999;
+        }
+
+        .fa-expand.lightbox:hover:after,
+        .fa-expand .lightbox:hover:before {
+            opacity: 1;
+        }
+        .baguetteBox-button {
+            background-color: transparent !important;
+        }
+
+        .fa-expand {
+            position: absolute;
+            z-index: 9999;
+            color: white;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            cursor: pointer;
+        }
+
+        /* ----------------header----------------- */
+        .d1 {
+            position: fixed;
+            top: .0%;
+            /* border: 2px solid blue; */
+            width: 100%;
+            padding: 2rem;
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            background-color: rgb(54, 54, 160);
+            z-index: 1111;
+        }
+
+        .d1 i {
+            color: rgb(249, 249, 250);
+            cursor: pointer;
+
+        }
+
+        .icons i {
+            font-size: 2rem;
+            cursor: pointer;
+
+        }
+
+        span:hover {
+            color: rgb(75, 196, 140);
+            cursor: pointer;
+
+        }
+
+        header {
+            /* border: 2px solid red; */
+            height: 8rem;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1111;
+            margin-top: -8%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: white;
+        }
+
+        .logo {
+            width: 55rem;
+            height: 100%;
+            /* border: 2px solid red; */
+            position: relative;
+            /* display: flex; */
+
+        }
+
+        .logo img {
+            position: absolute;
+            /* top: 1rem; */
+            left: 5%;
+            width: 50%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .nav-list {
+            position: absolute;
+            top: -.5rem;
+            /* padding-top: 2rem; */
+            right: 1.5rem;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            /* height: 3rem; */
+            /* border: 2px solid green; */
+            z-index: 1111;
+            cursor: pointer;
+
+        }
+
+        .nav-list li {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            /* border: 2px solid black; */
+            position: relative;
+            text-align: center;
+
+        }
+
+        .submenu {
+            position: absolute;
+            left: -10rem;
+            background: gainsboro;
+            min-width: 20rem;
+            line-height: 3rem;
+            border-top: 4px groove #fff;
+            visibility: hidden;
+            /* opacity: 0; */
+            z-index: 1111;
+
+        }
+
+        .submenu li {
+            display: block;
+            text-align: center;
+            padding-left: .5rem;
+
+        }
+
+
+        .nav-list li a {
+            color: black;
+            letter-spacing: .1rem;
+
+        }
+
+        .nav-list .menu:hover .submenu {
+            visibility: visible;
+            top: 3rem;
+            transition: all .2s linear;
+
+        }
+
+        .menu a i {
+            font-size: 2rem;
+
+        }
+
+        .fa-bars {
+            position: absolute;
+            top: 3rem;
+            right: 3rem;
+            font-size: 3rem;
+            color: #4b0ec3;
+            display: none;
+
+        }
+
+        .request {
+            /* border: 2px solid red; */
+            padding: 2.5rem;
+            margin-top: .5rem;
+            background-color: rgb(75, 196, 140);
+        }
+/* ------------------------------------- */
+
+        .pintrest-gallery {
+            column-count: 4;
+        }
+
+        .pintrest-gallery img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .gallery-images {
+            margin-bottom: 10px;
+            width: 90%;
+            height: 100%;
+            transition: 1s;
+            margin: 1.6rem;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        .gallery-images:hover{
+            transform: scale(1.1);
+            box-shadow: 1px 1px 10px grey;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0px;
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        /* --------------------------------------------------------- */
+        /* ---------------------------footer------------------ */
+footer {
+    position: relative;
+    margin-top: 15rem;
+    /* border-top: 3px solid gold; */
+    background-color: #093745;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* bottom: rem; */
+}
+
+footer .small_footer {
+    position: absolute;
+    left: 5%;
+    bottom: 85%;
+    /* border: 2px solid red; */
+    width: 90%;
+    border-radius: 3rem 3rem 0 0;
+    background-color: rgb(203, 22, 22);
+}
+
+.small {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.small i {
+    color: white;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+
+
+.ftr-box {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+
+
+
+}
+
+.ftr-box h4 {
+    font-size: 2rem;
+
+}
+
+.ftr-box li {
+    width: 22%;
+    top: 0;
+    text-align: center;
+
+}
+
+.ftr-box li iframe {
+    width: 100%;
+
+}
+
+.ftr-box li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.ftr-box h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: gold;
+
+}
+
+.ftr-box p {
+    font-weight: bold;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.p {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+}
+
+.social,
+.ftr-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.social li a {
+    color: white;
+    margin: 0 1rem;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+
+footer .social li a:hover {
+    transform: translateY(-1rem);
+
+}
+
+.copy {
+    /* border: 2px solid red; */
+    width: 100%;
+    color: white;
+    background-color: cadetblue;
+    margin-bottom: -1rem;
+
+}
+
+.copy p {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.ser-tab {
+    width: 70rem;
+    position: absolute;
+    top: 5rem;
+    left: -30rem;
+    /* border: 2px solid red; */
+    background: rgba(55, 81, 126, 1);
+    border-top: 4px groove #fff;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.ser-tab th {
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    letter-spacing: .1rem;
+
+}
+
+.ser-tab td {
+    height: 4rem;
+
+}
+
+.ser-tab td a {
+    letter-spacing: .1rem;
+
+}
+
+.menu:hover .ser-tab {
+    opacity: 1;
+    visibility: visible;
+    top: 3rem;
+    transition: .3s;
+
+}
+        @media(max-width:1269px) {
+            html {
+                font-size: 55%;
+            }
+
+            .nav {
+                /* border: 2px solid red; */
+                position: absolute;
+                right: -20rem;
+                top: 5rem;
+                width: 20rem;
+                min-height: 100vh;
+                flex-direction: column;
+                background: white;
+                z-index: 1;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                min-height: 20rem;
+            }
+
+            .nav-list>li {
+                width: 100%;
+                height: 4rem;
+                padding-top: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .submenu {
+                left: -24rem;
+                top: 1rem;
+                width: 24rem;
+            }
+
+            .ser-tab {
+                left: -70rem;
+                top: 1rem;
+            }
+
+            .nav-list .menu:hover .ser-tab {
+                top: 0rem;
+                transition: all .2s linear;
+
+            }
+
+            .nav-list .menu:hover {
+                border-top-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                background-color: rgba(0, 0, 150, 0.5);
+
+            }
+
+            .nav-list .menu:hover .submenu {
+                left: -24rem;
+                top: 0rem;
+                transition: all .2s linear;
+
+            }
+
+            .submenu li {
+                padding-left: 1rem;
+                min-height: 3rem;
+                transition: .2s all ease-in-out;
+
+            }
+
+            .submenu li:hover {
+                font-weight: bolder;
+
+            }
+
+            .fa-bars {
+                display: block;
+                cursor: pointer;
+                /* border: 2px solid red; */
+
+            }
+
+            .d1 span {
+                font-size: 1.6rem;
+
+            }
+
+            header {
+                margin-top: -10rem;
+            }
+
+        }
+
+        @media(max-width:1151px) {
+            html {
+                font-size: 45%;
+
+            }
+
+        }
+
+        @media(max-width:866px) {
+            html {
+                font-size: 45%;
+
+            }
+
+        }
+
+
+        @media(max-width:768px) {
+            html {
+                font-size: 45%;
+
+            }
+
+            .ser-tab td a {
+                width: 100%;
+                float: left;
+                padding-left: .5rem;
+
+            }
+
+            .ser-tab {
+                width: 55rem;
+                left: -55rem;
+
+            }
+
+        }
+
+        @media(max-width:600px) {
+            html {
+                font-size: 35%;
+
+            }
+
+            .side-bar .lists {
+                height: 100vh;
+
+            }
+
+            .side-bar .lists li {
+                margin-top: 6vh;
+
+            }
+
+            .ftr-box {
+                display: grid;
+                /* border: 2px solid green; */
+                grid-template-columns: auto auto;
+                justify-content: unset;
+
+            }
+
+            .ftr-box li {
+                width: 25rem;
+                /* border: 2px solid red; */
+            }
+
+            .p {
+                font-size: 2rem;
+            }
+
+            .d1 {
+                display: none;
+            }
+
+            header {
+                height: 15rem;
+                margin-top: -20rem;
+            }
+
+            .fa-bars {
+                font-size: 5rem;
+                margin-top: 2rem;
+                /* border: 2px solid red; */
+            }
+
+            .nav {
+                position: absolute;
+                right: -20rem;
+                top: 15rem;
+            }
+
+
+            .i {
+                font-size: 5rem;
+            }
+
+            footer .small_footer {
+                position: absolute;
+                bottom: 90%;
+            }
+
+            .small i {
+                padding: 1rem;
+            }
+            
+        }
+        /* ---------------------------------- */
+        @media(max-width: 768px) {
+            body {
+                padding: 0;
+            }
+        }
+        #pic1{
+            box-shadow: 2px 2px 10px grey;
+            
+        }
+        @media(max-width:650px) {
+            .pintrest-gallery{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: auto;
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <span><i class="fa fa-phone"></i>
+            Phone: +55 654 541 17</span>
+        <span><i class="fa fa-envelope"></i>
+            Email: info@krishcogroup.com
+        </span>
+        <!-- <span><i class="fa fa-clock"></i>
+            Hours: Mon-Fri: 8am - 7pm</span> -->
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-square-twitter"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <span>News & Media</span>
+        <span>Careers</span>
+        <span>FAQs</span>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" onclick="location.href='index.html'" style="user-select: none;">
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html"  onclick="location.href='index.html'" >HOME</a></li>
+                <li class="menu"><a href="index.html" class="a">COMPANY <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu_item"><a href="about.html" style="color:blue;">About us</a></li>
+                        <li class="menu_item"><a href="#award" onclick="setTimeout(sco,1);">Award & Recognition</a></li>
+                        <li class="menu_item"><a href="gallery2.html">Our gallary</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="index.html" style="cursor: pointer;" class="a sr"
+                        onclick="setTimeout(scrllo,1);"   onclick="sessionStorage.setItem('val','SERVICES')">SERVICES&nbsp;<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu_item"><a href="#pumps" style="color:blue;" onclick="setTimeout(sc,1);">Pumps</a>
+                        </li>
+                        <li class="menu_item"><a href="#oil" onclick="setTimeout(scrlo,1);">Oil engines</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li class="menu"><a href="blogs2.html" class="a">BLOG</a>
+                </li>
+                <li class="menu"><a href="index.html" class="a" onclick="setTimeout(scrll,1);"   onclick="sessionStorage.setItem('val','CONTACT US')">CONTACT US</a>
+                </li>
+                <li class="menu"><a href="#" class="a"><i class="fa-solid fa-cart-plus" style="color: blue;"
+                            title="Add to card"></i></a>
+                </li>
+                <div class="request">
+                    <li class="menu"><a href="#" class="a">Request A Quote <i class="fa-solid fa-arrow-right"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="bars"></i>
+    </header>
+    <div style="margin-top: 18rem;">
+        <h1>Image <span style="color: red;">Gallery</span></h1>
+
+    </div>
+    <div class="pintrest-gallery" >
+        <div class="gallery-images">
+            <img src="motor1.jpg"
+                alt="">
+        </div>
+        <div class="gallery-images">
+            <img src="motor2.png"
+                alt="">
+        </div>
+        <div class="gallery-images">
+            <img src="motor5.jpg"
+                alt="">
+        </div>
+        <div class="gallery-images">
+            <img src="motor3.jpg"
+                alt="">
+        </div>
+        <div class="gallery-images">
+            <img src="motor4.jpg"
+                alt="">
+        </div>
+        <div class="gallery-images">
+            <img src="motor2.jpg"
+                alt="">
+        </div>
+        <div class="gallery-images">
+            <img src="motor2.png"
+                alt="">
+        </div>
+        <div class="gallery-images">
+            <img src="motor5.jpg"
+                alt="">
+        </div>
+        <div class="gallery-images">
+            <img src="motor5.jpg"
+                alt="">
+        </div>
+        <div class="gallery-images">
+            <img src="motor4.jpg"
+                alt="">
+        </div>
+    </div>
+    <!-- --------------------------------footer----------------- -->
+    <footer>
+        <div class="small_footer">
+          <div class="small">
+            <i class="fa-solid fa-phone"> &nbsp; +5644187595</i>
+            <i class="fa-brands fa-whatsapp">&nbsp; +5644187595</i>
+            <ul class="social">
+              <li><a href="#"><i class="fa-brands fa-facebook" title="Facebook" style="color: #f4f6f9;"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram" title="Instagram" style="color:#f9f9f9;"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter" title="Twitter" style="color:#f0fbff;"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube" title="Youtube" style="color:#f6eeee;"></i></a></li>
+            </ul>
+    
+    
+          </div>
+    
+        </div>
+    
+        <ul class="ftr-box">
+          <!-- <img src="kri-logo.png" alt=""> -->
+     
+          <li>
+            <h3>Quick Links</h3><br>
+            <h4><a href="#">Services</a></h4><br>
+            <h4><a href="#">About Us</a></h4><br>
+            <h4><a href="#">Contact us</a></h4><br>
+            <h4><a href="#">Blogs</a></h4><br>
+            <h4><a href="#">Gallery</a></h4><br>
+          </li>
+          <li>
+            <div>
+              <h3>Contact Us</h3><br>
+              <div class="p">2nd Floor, Mithulok, West Boring Canal Road, Khetan Lane, Near Bharat Petrol Pump,
+                Beside
+                Senco
+                Gold & Diamonds, Patna, Bihar- 800001</div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.6987966567876!2d85.11724797517394!3d25.614923214655015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58ee6d975d47%3A0xbc5045cc2b8ae11c!2sRays%20Edutech%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1698580783201!5m2!1sen!2sin"
+                style="border:0; width: 100%; height: 25rem;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </li>
+        </ul>
+    
+      </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+
+
+        $(document).ready(function () {
+            var a = 0;
+            $('.fa-bars').click(function () {
+                if (a == 0) {
+                    $('.nav').css({ 'right': '0rem', 'transition': '.3s all linear' })
+                    a = 1;
+                }
+                else if (a == 1) {
+                    $('.nav').css({ 'right': '-21rem', 'transition': '.3s all linear' })
+                    a = 0;
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
