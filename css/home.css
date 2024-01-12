@@ -232,152 +232,6 @@ a {
     padding: 1rem;
 }
 
-/* ------------ */
-/* .box {
-    border: 2px solid red;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5%;
-    position: relative;
-
-}
-
-.box div {
-    padding: 1rem;
-    border: 2px solid blue;
-    border-bottom: 2px inset green;
-    width: 20%;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 0 0rem 2rem 2rem;
-    background-color: #A1EEBD;
-    background: url(pin-icon-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: 5%;
-    background-position: left 10px top 10px;
-    background-image: url('pin-icon-removebg-preview.png'),
-        url('pin-icon-removebg-preview.png') !important;
-    background-position: top 10px left 10px,
-        top 10px right 10px !important;
-}
-
-.box div:hover {
-    transform: scale(1.1);
-    background-color: #8DDFCB;
-}
-
-.box div img {
-    position: relative;
-    left: 20%;
-    margin: 5%;
-    width: 50%;
-    height: 10rem;
-} */
-
-/* .box div h2 {
-    position: relative;
-    text-align: center;
-    color: blue;
-}
-
-.box1 {
-    position: relative;
-    top: 5%;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-} */
-
-/* .box1 div {
-    padding: 1rem;
-    border: 2px solid blue;
-    width: 20%;
-    height: 10rem;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-bottom: 2px inset green;
-    border-radius: 0 0rem 2rem 2rem;
-    background-color: #90a6e8;
-    background: url(pin-icon-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: 5%;
-    background-position: left 10px top 10px;
-    background-image: url('pin-icon-removebg-preview.png'),
-        url('pin-icon-removebg-preview.png') !important;
-    background-position: top 10px left 10px,
-        top 10px right 10px !important
-} */
-
-
-/* 
-
-.box1 div:hover {
-    transform: scale(1.1);
-    background-color: #ADC4CE;
-}
-
-.box1 div img {
-    position: relative;
-    left: 20%;
-    margin: 5%;
-    width: 50%;
-    height: 10rem;
-}
-
-.box1 div h2 {
-    position: relative;
-    text-align: center;
-} */
-
-/* .box2 {
-    margin-bottom: 25%;
-    border: 2px solid green;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-}
-
-.box2 div {
-    padding: 1rem;
-    border: 2px solid blue;
-    width: 20%;
-    height: 10rem;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-bottom: 2px inset green;
-    border-radius: 0 0rem 2rem 2rem;
-    background: url(pin-icon-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: 5%;
-    background-position: left 10px top 10px;
-    background-image: url('pin-icon-removebg-preview.png'),
-        url('pin-icon-removebg-preview.png') !important;
-    background-position: top 10px left 10px,
-        top 10px right 10px !important
-} */
-
-/* .box2 div:hover {
-    transform: scale(1.1);
-    background-color: #F7FFE5;
-}
-
-.box2 div img {
-    position: relative;
-    left: 25%;
-    margin: 5%;
-    width: 50%;
-    height: 10rem;
-}
-
-.box2 div h2 {
-    position: relative;
-    text-align: center;
-} */
-
 .wrapper {
     margin: 80px auto 0 auto;
 }
@@ -620,6 +474,7 @@ a {
 
 .card__picture {
     background-size: cover;
+    
 }
 
 .card__picture--1 {
@@ -796,7 +651,7 @@ button {
 /* ------------------------- */
 .flip-card {
     background-color: transparent;
-    width: 300px;
+    width:300px;
     height: 300px;
     perspective: 1000px;
     /* border: 2px solid red; */
@@ -1817,4 +1672,9 @@ footer .social li a:hover {
     .card__price-only p {
         font-size: 1rem;
     }
+    .card{
+        margin-left: -5rem;
+        width: 50rem;
+    }
+
 }
